@@ -9,6 +9,7 @@ public class LoginHandler extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         Object username = request.getSession().getAttribute("username");
+        System.out.println("拦截器");
         if (null == username) {
             response.sendRedirect("/login");
             return false;
