@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.CategoryMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.entity.Category" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="is_menu" jdbcType="BIT" javaType="java.lang.Boolean" />
+      <arg column="is_show" jdbcType="BIT" javaType="java.lang.Boolean" />
+      <arg column="is_slide" jdbcType="BIT" javaType="java.lang.Boolean" />
+      <arg column="available" jdbcType="BIT" javaType="java.lang.Boolean" />
+      <arg column="created_at" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="updated_at" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, name, is_menu, is_show, is_slide, available, created_at, updated_at
+  </sql>
+</mapper>
