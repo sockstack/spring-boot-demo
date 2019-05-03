@@ -1,0 +1,18 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="/admin/css/font.css">
+        <link rel="stylesheet" href="/admin/css/xadmin.css">
+        <script src="/admin/lib/layui/layui.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/admin/js/xadmin.js"></script>
+        <!--[if lt IE 9]>
+        <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+        <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div th:include="::content"></div>
+    </body>
+    <script th:include="::script"></script>
+</html>

@@ -11,7 +11,7 @@ import com.example.demo.entity.apiInfo;
 
 @ControllerAdvice
 public class ErrorHandler {
-    private final static String DEFAULT_TEMPLATE_NAME = "404";
+    private final static String DEFAULT_TEMPLATE_NAME = "admin/404";
 
     /**
      * web统一错误处理

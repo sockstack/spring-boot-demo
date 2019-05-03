@@ -22,7 +22,7 @@ public class login {
 
     @GetMapping(value = "login")
     public String showLogin() {
-        return "login";
+        return "admin/login";
     }
 
     @PostMapping(value = "doLogin")

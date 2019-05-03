@@ -10,7 +10,7 @@ public class Article {
 
     private String title;
 
-    private String desc;
+    private String descption;
 
     /**
      * 分类id
@@ -26,10 +26,10 @@ public class Article {
 
     private String content;
 
-    public Article(Integer id, String title, String desc, Integer categoryId, Date createdAt, Date updatedAt, String content) {
+    public Article(Integer id, String title, String descption, Integer categoryId, Date createdAt, Date updatedAt, String content) {
         this.id = id;
         this.title = title;
-        this.desc = desc;
+        this.descption = descption;
         this.categoryId = categoryId;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -69,17 +69,17 @@ public class Article {
     }
 
     /**
-     * @return desc
+     * @return descption
      */
-    public String getDesc() {
-        return desc;
+    public String getdescption() {
+        return descption;
     }
 
     /**
-     * @param desc
+     * @param descption
      */
-    public void setDesc(String desc) {
-        this.desc = desc == null ? null : desc.trim();
+    public void setdescption(String descption) {
+        this.descption = descption == null ? null : descption.trim();
     }
 
     /**

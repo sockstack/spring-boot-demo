@@ -1,7 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.Admin;
-import com.example.demo.exceptions.ApiException;
 import com.example.demo.services.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -24,6 +22,11 @@ public class index {
         String username = (String) request.getSession().getAttribute("username");
         m.addAttribute("username", username);
 
-        return "home";
+        return "admin/home";
+    }
+
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "admin/welcome";
     }
 }
